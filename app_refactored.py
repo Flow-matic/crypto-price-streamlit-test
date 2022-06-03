@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 st.markdown('''# **Binance Price App**
-A simple cryptocurrency price app pulling price data from *Binance API*.
+A cryptocurrency price app pulling price data from *Binance API*.
 ''')
 
 st.header('**Selected Price**')
