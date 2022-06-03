@@ -8,9 +8,11 @@ A simple cryptocurrency price app pulling price data from *Binance API*.
 st.header('**Selected Price**')
 
 # Load market data from Binance API
+
 df = pd.read_json('https://api.binance.com/api/v3/ticker/24hr')
 
 # Custom function for rounding values
+
 def round_value(input_value):
     if input_value.values > 1:
         a = float(round(input_value, 2))
@@ -52,7 +54,7 @@ for i in range(len(crpytoList.keys())):
 st.header('**All Price**')
 st.dataframe(df)
 
-st.info('Credit: Created by Chanin Nantasenamat (aka [Data Professor](https://youtube.com/dataprofessor/))')
+st.info('Created by Jonathan Vinson)')
 
 st.markdown("""
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
